@@ -27,13 +27,12 @@
 using namespace std;
 
 int main(){
-    cout<<"hello world"<<endl;
     string receta;
     PeticionCurl peticion1;
     cout<<"Digite la receta: "<<endl;
     getline(std::cin, receta);
     RecepcionJson json1;
-    cout<<json1.Json(peticion1.peticionC(receta))<<endl;
+    cout<<"las calorias generadas por tu receta son: "<<json1.Json(peticion1.peticionC(receta))<<endl;
 
     return 0;
 }
