@@ -8,7 +8,7 @@ LIBS = -lcurl                # Especifica que se debe enlazar la biblioteca curl
 TARGET = programa
 
 # Archivos fuente
-SRCS = main.cpp
+SRCS = main.cpp PeticionCurl.cpp RecepcionJson.cpp
 
 # Archivos objeto (se generan automáticamente a partir de SRCS)
 OBJS = $(SRCS:.cpp=.o)
